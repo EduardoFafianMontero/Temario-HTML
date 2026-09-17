@@ -12,6 +12,7 @@ Está dividida en dos subcarpetas:
 ## 📂 Ejercicios
 
 - **[Titulos](./Ejercicios/Titulos)** — Uso de las 6 etiquetas de encabezado (`<h1>` a `<h6>`) y su jerarquía visual.
+- **[Parrafos](./Ejercicios/Parrafos)** — Uso de `<p>` para párrafos de texto y `<br>` para saltos de línea manuales dentro de un párrafo.
 
 *(Esta lista se irá ampliando a medida que añada más ejercicios.)*
 
