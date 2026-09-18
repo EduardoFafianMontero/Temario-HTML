@@ -13,6 +13,7 @@ Está dividida en dos subcarpetas:
 
 - **[Titulos](./Ejercicios/Titulos)** — Uso de las 6 etiquetas de encabezado (`<h1>` a `<h6>`) y su jerarquía visual.
 - **[Parrafos](./Ejercicios/Parrafos)** — Uso de `<p>` para párrafos de texto y `<br>` para saltos de línea manuales dentro de un párrafo.
+- **[Links](./Ejercicios/Links)** — Uso de `<a>` para enlaces externos e internos, y el atributo `target="_blank"`.
 
 *(Esta lista se irá ampliando a medida que añada más ejercicios.)*
 
