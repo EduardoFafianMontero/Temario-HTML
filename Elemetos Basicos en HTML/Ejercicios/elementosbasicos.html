@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos básicos</title>
+</head>
+<body>
+
+  <!-- ===== TÍTULOS ===== -->
+  <!-- h1 es el principal (uno por página). De h2 a h6 son subniveles. -->
+  <h1>Elementos básicos de HTML</h1>
+  <h2>Título de nivel 2</h2>
+  <h3>Título de nivel 3</h3>
+  <h4>Título de nivel 4</h4>
+  <h5>Título de nivel 5</h5>
+  <h6>Título de nivel 6</h6>
+
+  <hr>
+  <!-- hr: línea horizontal que separa secciones. Es una etiqueta vacía (sin cierre). -->
+
+  <!-- ===== PÁRRAFOS Y SALTOS DE LÍNEA ===== -->
+  <p>Este es un párrafo. Cada párrafo se separa del siguiente automáticamente.</p>
+  <p>
+    Primera línea de una dirección<br>
+    Segunda línea, forzada con br<br>
+    Tercera línea
+  </p>
+  <!-- br fuerza un salto de línea DENTRO del mismo párrafo. -->
+
+  <!-- ===== ÉNFASIS ===== -->
+  <p>
+    Esto es <strong>muy importante</strong> y esto lleva <em>énfasis</em>.
+    Esto es <b>negrita solo visual</b> y esto <i>cursiva solo visual</i>.
+  </p>
+  <!-- strong y em tienen significado (importancia / énfasis); b e i solo cambian el aspecto. -->
+
+  <!-- ===== CITAS Y CÓDIGO ===== -->
+  <blockquote>
+    La mejor forma de aprender a programar es programando.
+  </blockquote>
+  <!-- blockquote: cita larga. Los navegadores la sangran por defecto. -->
+
+  <p>Para mostrar un párrafo se usa la etiqueta <code>&lt;p&gt;</code>.</p>
+  <!-- code: fragmento de código en línea. Para escribir < y > hay que usar &lt; y &gt; -->
+
+  <pre>
+Esto es texto preformateado:
+    conserva los espacios
+    y los saltos de línea.
+  </pre>
+  <!-- pre: respeta los espacios y saltos tal cual están en el código. -->
+
+  <!-- ===== IMAGEN ===== -->
+  <img src="imagenes/ejemplo.svg" alt="Logo naranja con el texto HTML" width="150">
+  <!-- src: ruta de la imagen, relativa a este archivo.
+       alt: descripción por si la imagen no carga (y para accesibilidad). Siempre obligatorio.
+       width: ancho en píxeles. Si solo pones uno, el otro se ajusta proporcionalmente. -->
+
+</body>
+</html>
