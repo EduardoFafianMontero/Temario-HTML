@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links en HTML y CSS</title>
+
+  <style>
+    /* ===== ESTADOS DEL ENLACE: el orden obligatorio es link, visited, hover, active ===== */
+    a:link    { color: #0066cc; }                       /* sin visitar */
+    a:visited { color: #6a2c91; }                       /* ya visitado */
+    a:hover   { color: #e34f26; text-decoration: none; } /* ratón encima: cambia color y quita subrayado */
+    a:active  { color: red; }                           /* mientras se hace clic */
+
+    /* Un enlace con aspecto de botón, usando una clase */
+    a.boton {
+      display: inline-block;      /* permite aplicar padding y márgenes verticales al enlace */
+      padding: 10px 20px;
+      background-color: #0066cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    a.boton:hover { background-color: #004a99; color: white; }
+
+    section { margin-bottom: 400px; } /* Alarga la página para ver cómo funciona el ancla */
+  </style>
+</head>
+<body>
+
+  <h1 id="inicio">Tipos de enlaces</h1>
+
+  <!-- 1. ENLACE ABSOLUTO (a otra web) abierto en pestaña nueva -->
+  <p><a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Ir a Wikipedia (pestaña nueva)</a></p>
+  <!-- target="_blank": pestaña nueva. rel="noopener noreferrer": seguridad, va siempre con _blank. -->
+
+  <!-- 2. ENLACE RELATIVO (a otro archivo de mi proyecto) -->
+  <p><a href="otra-pagina.html">Ir a la otra página de mi proyecto</a></p>
+  <!-- Sin "http": busca el archivo en la misma carpeta que este. -->
+
+  <!-- 3. ANCLA INTERNA (salta a una parte de esta misma página) -->
+  <p><a href="#contacto">Ir a la sección de contacto (más abajo)</a></p>
+  <!-- "#contacto" busca el elemento que tenga id="contacto". -->
+
+  <!-- 4. CORREO Y TELÉFONO -->
+  <p><a href="mailto:alguien@correo.com">Escríbeme un correo</a></p>
+  <p><a href="tel:+34600000000">Llámame</a></p>
+
+  <!-- 5. ENLACE CON ASPECTO DE BOTÓN -->
+  <p><a class="boton" href="otra-pagina.html">Soy un enlace con forma de botón</a></p>
+
+  <section></section>
+
+  <h2 id="contacto">Contacto</h2>
+  <p>Has llegado con el ancla. <a href="#inicio">Volver arriba</a></p>
+
+</body>
+</html>
