@@ -1,0 +1,48 @@
+/* ===== REGLA UNIVERSAL ===== */
+/* El asterisco afecta a TODOS los elementos. Con border-box, el width incluye padding y borde. */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== SELECTOR DE ETIQUETA ===== */
+/* Afecta a todos los <body>. */
+body {
+  font-family: Arial, sans-serif; /* Tipografía; si no existe Arial, usa cualquier sans-serif */
+  background-color: #f4f4f4;      /* Color de fondo en hexadecimal */
+  margin: 0;                      /* Quita el margen por defecto del navegador */
+  padding: 20px;                  /* Espacio interior alrededor del contenido */
+}
+
+h1 {
+  color: navy;          /* Color del texto con nombre */
+  text-align: center;   /* Centra el texto */
+}
+
+p {
+  font-size: 1.1rem;    /* rem: relativo al tamaño de letra de la raíz */
+  line-height: 1.5;     /* Altura de línea, hace el texto más legible */
+}
+
+/* ===== SELECTOR DE CLASE (empieza por punto) ===== */
+/* Afecta a cualquier elemento con class="destacado". Se puede reutilizar. */
+.destacado {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* ===== SELECTOR DE ID (empieza por almohadilla) ===== */
+/* Afecta solo al elemento con id="aviso". */
+#aviso {
+  background-color: #fff3cd;
+  border: 1px solid #e0c36a;  /* grosor, estilo, color */
+  padding: 10px;
+}
+
+/* ===== MODELO DE CAJA ===== */
+.caja {
+  width: 300px;
+  padding: 20px;               /* Espacio DENTRO del borde */
+  border: 3px solid black;     /* El borde */
+  margin: 30px auto;           /* Espacio FUERA del borde. "auto" a los lados centra la caja */
+  background-color: white;
+  } 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introducción a CSS</title>
+
+  <!-- Forma EXTERNA (la recomendada): enlaza el archivo estilos.css.
+       rel="stylesheet" indica que es una hoja de estilos; href es su ruta. -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>Mi primera página con estilo</h1>
+
+  <!-- Afectado por la regla de etiqueta "p" -->
+  <p>Este párrafo recibe los estilos generales de todos los párrafos.</p>
+
+  <!-- Afectado por la regla de clase ".destacado" (además de la de "p") -->
+  <p class="destacado">Este párrafo tiene la clase "destacado", así que se ve diferente.</p>
+
+  <!-- Afectado por la regla de id "#aviso" -->
+  <p id="aviso">Este párrafo tiene un id único: solo puede haber uno con este id.</p>
+
+  <!-- Estilo EN LÍNEA: gana a todo lo demás, pero mezcla HTML y CSS. Mejor evitarlo. -->
+  <p class="destacado" style="color: green;">Este es destacado, pero el estilo en línea manda y lo pinta de verde.</p>
+
+  <!-- Modelo de caja: mira cómo se aplican margin, border y padding -->
+  <div class="caja">Soy una caja con padding, borde y margen.</div>
+
+</body>
+</html>
