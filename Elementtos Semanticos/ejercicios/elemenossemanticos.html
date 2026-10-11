@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos semánticos</title>
+
+  <style>
+    body { font-family: sans-serif; margin: 0; }
+    header, footer { background: #0066cc; color: white; padding: 15px 20px; }
+    nav a { color: white; margin-right: 15px; text-decoration: none; }
+    .contenedor { display: flex; gap: 20px; padding: 20px; } /* main y aside en columnas */
+    main { flex: 3; }   /* ocupa 3 partes */
+    aside { flex: 1; background: #f2f2f2; padding: 10px; } /* ocupa 1 parte */
+    article { border: 1px solid #ccc; padding: 12px; margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+
+  <!-- CABECERA de toda la página -->
+  <header>
+    <h1>Mi blog de aprendizaje</h1>
+
+    <!-- NAV: bloque de navegación -->
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Temario</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="contenedor"> <!-- div solo para agrupar por estilo: no tiene significado -->
+
+    <!-- MAIN: contenido principal, solo uno por página -->
+    <main>
+      <h2>Últimas entradas</h2>
+
+      <!-- ARTICLE: contenido independiente -->
+      <article>
+        <h3>Mi primer formulario</h3>
+        <p>Publicado el <time datetime="2026-10-08">8 de octubre de 2026</time></p>
+        <p>Hoy he aprendido a recoger datos con <code>form</code>.</p>
+      </article>
+
+      <article>
+        <h3>Inline y block</h3>
+        <p>La diferencia está en cómo ocupan la línea.</p>
+      </article>
+
+      <!-- SECTION con FIGURE: sección temática con una imagen y su pie -->
+      <section>
+        <h2>Galería</h2>
+        <figure>
+          <img src="../../03-Elementos-Basicos-de-HTML/Ejercicios/imagenes/ejemplo.svg" alt="Imagen de ejemplo" width="200">
+          <figcaption>Imagen de ejemplo con su pie</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <!-- ASIDE: contenido secundario -->
+    <aside>
+      <h2>Sobre mí</h2>
+      <p>Estudiante de DAM aprendiendo desarrollo paso a paso.</p>
+    </aside>
+
+  </div>
+
+  <!-- PIE de toda la página -->
+  <footer>
+    <p>&copy; 2026 · Mi carpeta de aprendizaje</p>
+  </footer>
+
+</body>
+</html>
