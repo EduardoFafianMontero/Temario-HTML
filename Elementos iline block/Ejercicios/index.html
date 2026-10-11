@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline y block</title>
+
+  <style>
+    /* Bordes de colores para ver cuánto ocupa cada elemento */
+    .bloque  { background: #cfe8ff; border: 2px solid #0066cc; margin-bottom: 8px; }
+    .linea   { background: #ffe0cc; border: 2px solid #e34f26; }
+
+    /* Un span NO respeta width/height porque es inline */
+    .span-ancho { width: 300px; height: 80px; }
+
+    /* inline-block: en línea pero SÍ respeta width/height */
+    .caja {
+      display: inline-block;
+      width: 100px;
+      height: 60px;
+      background: #d6f5d6;
+      border: 2px solid green;
+    }
+
+    .oculto { display: none; }  /* desaparece por completo */
+  </style>
+</head>
+<body>
+
+  <h1>Block vs inline</h1>
+
+  <!-- 1. BLOCK: cada div ocupa toda la línea aunque tenga poco texto -->
+  <div class="bloque">Soy un div (block)</div>
+  <div class="bloque">Yo también, y empiezo en línea nueva</div>
+
+  <!-- 2. INLINE: los span se colocan uno junto a otro -->
+  <p>
+    <span class="linea">span 1</span>
+    <span class="linea">span 2</span>
+    <span class="linea">span 3</span>
+  </p>
+
+  <!-- 3. width y height en un span NO hacen nada -->
+  <p><span class="linea span-ancho">Este span ignora width y height</span></p>
+
+  <!-- 4. INLINE-BLOCK: en línea y con tamaño -->
+  <p>
+    <span class="caja">1</span>
+    <span class="caja">2</span>
+    <span class="caja">3</span>
+  </p>
+
+  <!-- 5. DISPLAY NONE: el siguiente párrafo no se ve ni ocupa espacio -->
+  <p class="oculto">Nadie me ve</p>
+  <p>Este párrafo va justo debajo de las cajas.</p>
+
+  <!-- 6. Dentro de un texto, span sirve para destacar una palabra sin romper la línea -->
+  <p>El curso tiene <span style="color: #e34f26; font-weight: bold;">10 temas</span> en total.</p>
+
+</body>
+</html>
