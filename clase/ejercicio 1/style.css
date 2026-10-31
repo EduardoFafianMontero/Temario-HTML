@@ -1,0 +1,91 @@
+/*Formato general*/
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #fdf6e9;
+  color: #3b2a1a;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/*Cabecera */
+header {
+  background-color: #7a3e12;
+  color: #fff8e7;
+  text-align: center;
+  padding: 10px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+header p {
+  margin: 5px 0 0 0;
+  font-style: italic;
+}
+
+/*Menú */
+nav {
+  background-color: #d9a441;
+  text-align: center;
+  padding: 10px;
+}
+nav a {
+  color: #3b2a1a;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/*Contenido*/
+main {
+  width: 800px;
+  max-width: 90%;
+  margin: 25px auto;
+  background-color: #ffffff;
+  padding: 25px 35px;
+  border: 2px solid #d9a441;
+  border-radius: 20px;
+}
+h2 {
+  color: #7a3e12;
+  border-bottom: 2px solid #d9a441;
+  padding-bottom: 5px;
+}
+h3 {
+  color: #7a3e12;
+}
+.datos {
+  font-style: italic;
+  color: #7a5a3a;
+}
+figure {
+  text-align: center;
+  margin: 20px 0;
+}
+figcaption {
+  font-size: 0.9em;
+  color: #7a5a3a;
+}
+ul li {
+  margin-bottom: 4px;
+}
+ol li {
+  margin-bottom: 8px;
+}
+.nota {
+  background-color: #fdf0cf;
+  border-left: 5px solid #d9a441;
+  padding: 10px 15px;
+}
+
+/* Pie*/
+footer {
+  background-color: #7a3e12;
+  color: #fff8e7;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9em;
+}
