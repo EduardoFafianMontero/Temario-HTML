@@ -7,11 +7,12 @@
     <title>Sopa de cebolla - Recetas del Restaurante</title>
   </head>
   <body>
+    <!-- Cabecera: nombre del restaurante y eslogan -->
     <header>
       <h1>Restaurante El Buen Sabor</h1>
       <p>Nuestro recetario de cocina</p>
     </header>
-
+    <!-- Menú: enlaces internos que saltan a los id de abajo -->
     <nav>
       <a href="#ingredientes">Ingredientes</a>
       <a href="#proceso">Proceso</a>
@@ -20,14 +21,14 @@
     <main>
       <h2>Sopa de cebolla</h2>
       <p class="datos">Receta para 4 personas &middot; Cocina francesa</p>
-
+      <!-- TODO: añadir <img> dentro de cada figure (ahora solo tienen pie de foto) -->
       <figure>
         <figcaption>Sopa de cebolla gratinada con queso</figcaption>
       </figure>
-
+      <!-- Ingredientes: lista sin orden (ul) -->
       <h2 id="ingredientes">Ingredientes</h2>
-
       <figure>
+        <img src="img/sopa cebolla.jpg" alt="Cebolla, queso y pan" />
         <figcaption>Cebolla, queso y pan: la base de la receta</figcaption>
       </figure>
 
@@ -42,7 +43,7 @@
         <li>1 hoja de laurel.</li>
         <li>Pimienta.</li>
       </ul>
-
+      <!-- Proceso: lista ordenada (ol) porque el orden de los pasos importa -->
       <h2 id="proceso">Proceso</h2>
       <ol>
         <li>Pelar y partir las cebollas en rodajas finas.</li>
@@ -60,7 +61,7 @@
           horno.
         </li>
       </ol>
-
+      <!-- Consejo final: la clase "nota" le da el estilo destacado en el CSS -->
       <p class="nota">
         <strong>Consejo del chef:</strong> sírvela muy caliente, recién salida
         del horno.

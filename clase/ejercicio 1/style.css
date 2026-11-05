@@ -69,6 +69,11 @@ figcaption {
   font-size: 0.9em;
   color: #7a5a3a;
 }
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
 ul li {
   margin-bottom: 4px;
 }
